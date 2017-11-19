@@ -1,9 +1,115 @@
 <!DOCTYPE html>
 <head>
-	<link href="css/style.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
-<header>
-	<h1 class="header__title">Notify</h1>
-	<p class="header__text">A great new free psd theme to showcase </p><br>your new application. 
-	<p><span></span><span></span><span></span></p>
-</header>
+<body>
+	<header class="container">
+		<nav class="navbar navbar-expand-md">
+			<div class="navbar-brand"><a><img src="img/b-logo.png"></a>
+				<div class="brand__text">
+					<h3>BAK-ONE</h3>
+					<p>One Page Flat Template</p>
+				</div>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+			<div class="navbar-collapse collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="#home">home</a></li>
+					<li class="nav-item"><a class="nav-link" href="#portfolio">portfolio</a></li>
+					<li class="nav-item"><a class="nav-link" href="#about">about</a></li>
+					<li class="nav-item"><a class="nav-link" href="#contact">contact</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<section class="hero text-sm-center">
+		<h1 class="hero__motto">We Build <span>Brand</span></h1>
+		<h4 class="hero__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy<br>nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.	</h4>
+		<button class="hero__">LEARN MORE</button>
+		<div class="hero__down"><i class="fa fa-chevron-circle-down"></i></div>
+	</section>
+	<section class="portfolio container text-sm-center">
+		<h3 class="portfolio__title">Portfolio</h3>
+		<p class="portfolio__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+		<div class="filter">
+			<div class="filter__buttons row">
+				<div class="col-sm-6 offset-sm-3 btn-centering">
+					<button>all</button>
+					<button>web design</button>
+					<button>graphik design</button>
+					<button>flat design</button>
+				</div>
+			</div>
+			<div class="filter__items row align-content-sm-between">
+				<div class="col-6 col-md-3 filter-item"><img src="img/icon1.png" alt=""/></div>
+				<div class="col-6 col-md-3 filter-item"><img src="img/icon2.png" alt=""/></div>
+				<div class="col-6 col-md-3 filter-item"><img src="img/icon3.png" alt=""/></div>
+				<div class="col-6 col-md-3 filter-item"><img src="img/icon4.png" alt=""/></div>
+				<div class="col-6 col-md-3 filter-item"><img src="img/icon5.png" alt=""/></div>
+				<div class="col-6 col-md-3 filter-item"><img src="img/icon6.png" alt=""/></div>
+				<div class="col-6 col-md-3 filter-item"><img src="img/icon1.png" alt=""/></div>
+				<div class="col-6 col-md-3 filter-item"><img src="img/icon2.png" alt=""/></div>
+			</div>
+		</div>
+	</section>
+	<section class="about">
+		<div class="container text-sm-center">
+			<h3 class="about__title">About Us</h3>
+			<p class="about__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+			<div class="row">
+				<div class="offset-sm-1 col-sm-10">
+					<div class="row justify-content-around">
+						<div class="col-sm-3 person"><img class="img-fluid" src="img/img1.jpg"/>
+							<h4>Melannie Doe</h4>
+							<h5>Project manager</h5>
+							<p class="text-left">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nislut aliquip ex ea commodo consequat.</p>
+						</div>
+						<div class="col-sm-3 person"><img class="img-fluid" src="img/img2.jpg"/>
+							<h4>Melannie Doe</h4>
+							<h5>Project manager</h5>
+							<p class="text-left">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nislut aliquip ex ea commodo consequat.</p>
+						</div>
+						<div class="col-sm-3 person"><img class="img-fluid" src="img/img3.jpg"/>
+							<h4>Melannie Doe</h4>
+							<h5>Project manager</h5>
+							<p class="text-left">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nislut aliquip ex ea commodo consequat.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="contacts container">
+		<h3 class="contacts__title">Contact Us</h3>
+		<p class="contacts__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+		<div class="row">
+			<form class="col-sm-6" id="contactForm" action="#">
+				<div class="fRow">
+					<input type="text" placeholder="Your name">
+					<input type="email" placeholder="Your email">
+				</div>
+				<div class="fRow">
+					<textarea class="col-sm-12" placeholder="Your message"></textarea>
+				</div>
+				<input type="submit" value="submit">
+			</form>
+			<div class="contacts">
+				<h4>INFORMATION</h4>
+				<p>Bak-One Company <br></p>12345 Hollywood Bvld Street<br>Los Angeles, California
+				<p>+444 (Phone) 123456<i class="fa fa-phone"> </i></p>
+				<p>+123 (FAX) 0011223<i class="fa fa-print"> </i></p>
+				<p>info@bak-onecompany.com<i class="fa fa-envelope-o"></i></p>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<p>© Copyright 2013 Bak-One  |  One Page Flat Template</p>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>

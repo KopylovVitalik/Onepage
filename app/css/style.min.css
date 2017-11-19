@@ -1,0 +1,119 @@
+body
+{
+    font-size: 14px;-webkit-box-sizing: border-box;box-sizing: border-box;-webkit-font-smoothing: subpixel-antialiased;
+}.nav
+{
+    padding-bottom: 46px;
+}.navbar-brand
+{
+    float: left;height: 48px;margin: 27px 0 23px;
+}.navbar-brand a
+{display: inline-block;float: left;
+
+    text-decoration: none;
+}.navbar-brand a img
+{
+    display: block;height: 48px;
+}.navbar-brand .brand__text
+{
+    display: inline-block;height: 48px;padding-left: 14px;
+}.navbar-brand .brand__text h3
+{
+    font-family: Lato;font-size: 20px;font-weight: 700;margin: 2px auto;
+}.navbar-brand .brand__text p
+{
+    margin: 2px auto;
+}ul.navbar-nav
+{display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display:         flex;
+
+    width: 100%;padding: 24px;list-style-type: none;-webkit-box-pack: end;-webkit-justify-content: flex-end;-ms-flex-pack: end;justify-content: flex-end;
+}ul.navbar-nav li
+{
+    margin: 0 14px                        ;margin: 0;text-transform: uppercase;color: #444;
+}ul.navbar-nav li a
+{font-family: Lato;font-size: 14px;
+
+    display: block;padding: 14px;text-decoration: none;
+}ul.navbar-nav li a:hover
+{
+    cursor: pointer;background-color: #16a086;
+}.hero
+{font-weight: light;padding: 82px 0;color: #fff;
+    background: url(../img/jumbotron.png);background-repeat: no-repeat;-webkit-background-size: cover;background-size: cover;
+}.hero h1
+{
+    font-size: 55px;
+}.hero h4
+{font-size: 18px;
+
+    padding-top: 44px;
+}.hero button
+{font-size: 13px;font-weight: 700;
+
+    margin: 52px auto 45px;padding: 14px;color: #fff;border: none;outline: 0;background-color: #1bbc9b;
+}.hero__down
+{
+    font-size: 44px;padding: 0;
+}.portfolio
+{
+    padding: 52px 0 62px;
+}.portfolio h3
+{
+    font-size: 28px;
+}.portfolio p
+{
+    font-weight: 16;
+}.portfolio .filter__buttons
+{
+    padding: 40px 0 48px;
+}.portfolio .filter__buttons .btn-centering
+{
+    display: -webkit-box                                                ;display: -webkit-flex;display: -ms-flexbox;display:         flex;-webkit-justify-content: space-around;-ms-flex-pack: distribute;justify-content: space-around;
+}.portfolio .filter__buttons button
+{font-size: 13px;
+    font-weight: 700;padding: 14px;letter-spacing: 2px;text-transform: uppercase;color: #fff;border: none;outline: 0;background-color: #1bbc9b;
+}.portfolio .filter-item
+{
+    padding: 18px;
+}.about
+{padding: 58px 0 74px;
+
+    background-color: #1bbc9b;
+}.about h3
+{
+    font-size: 28px;color: #fff;
+}.about .person
+{overflow: hidden;padding: 0;color: #444;
+    background-color: #fff;
+}.about .person img
+{
+    width: 100%;
+}.about .person h4
+{
+    font-size: 18px;margin: 0;padding: 21px 0 9px;
+}.about .person h5
+{font-size: 14px;
+    font-style: italic;margin: 0;padding-bottom: 23px;
+}.about .person p
+{margin-bottom: 21px;
+    padding-left: 10px;
+}.contacts
+{
+    padding: 53px 0 62px;
+}.contacts h3
+{
+    font-size: 28px;text-align: center;
+}.contacts p
+{
+    text-align: center;
+}.contacts form#contactForm
+{
+    display: -webkit-box                                                                ;display: -webkit-flex;display: -ms-flexbox;display:         flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-webkit-flex-flow: column;-ms-flex-flow: column;flex-flow: column;
+}.contacts form#contactForm .fRow
+{
+    width: 100%;
+}.contacts form#contactForm input[type=email],
+.contacts form#contactForm input[type=text]
+{
+    width: 48%;margin: 1%;
+}

@@ -1,17 +1,100 @@
+include mixins/_mixins.pug
+
+
+
 doctype html
 head
-	link(href='css/style.min.css')
-header
-	h1.header__title Notify
-	p.header__text A great new free psd theme to showcase 
-	|
-	br
-	| your new application. 
-	p
-		span
-		span
-		span
-section.features
-	.features__
+	link(rel='stylesheet', href='css/normalize.css')
+	link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous")
+	link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+	link(href='https://fonts.googleapis.com/css?family=Lato:300,400,400i,700' rel='stylesheet')
+	link(rel='stylesheet' href='css/style.min.css')
+body
+	header.container
+		
+		nav.navbar.navbar-expand-md
+			.navbar-brand
+				a: img(src='img/b-logo.png')
+				.brand__text
+					h3 BAK-ONE
+					p One Page Flat Template
+			button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
+				span(class="navbar-toggler-icon")
+			div(class="navbar-collapse collapse" id="navbarNav")
+				-var menu = ['home', 'portfolio', 'about', 'contact']
+				+menu
+	
+	section.hero.text-sm-center
+		h1.hero__motto We Build 
+			span Brand
+		h4.hero__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+			br
+			| nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.	
+		button.hero__ LEARN MORE
+		.hero__down
+			i.fa.fa-chevron-circle-down
+
+	section.portfolio.container.text-sm-center
+		h3.portfolio__title Portfolio
+		p.portfolio__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+		.filter
+			.filter__buttons.row
+				.col-sm-6.offset-sm-3.btn-centering
+					-var portfolioButtons = ['all', 'web design', 'graphik design', 'flat design']
+					+pButtons
+			.filter__items.row.align-content-sm-between
+				-var portfolioImages = ['icon1.png', 'icon2.png', 'icon3.png', 'icon4.png', 'icon5.png', 'icon6.png', 'icon1.png','icon2.png']
+				+pImages
+
+
+	section.about
+		.container.text-sm-center
+			h3.about__title About Us
+			p.about__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+			.row
+				.offset-sm-1.col-sm-10
+					.row.justify-content-around
+						-var ourPeople = [{image: 'img1.jpg', name: 'Melannie Doe', position: 'Project manager', text: 'Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nislut aliquip ex ea commodo consequat.'}, {image: 'img2.jpg', name: 'Melannie Doe', position: 'Project manager', text: 'Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nislut aliquip ex ea commodo consequat.'}, {image: 'img3.jpg', name: 'Melannie Doe', position: 'Project manager', text: 'Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nislut aliquip ex ea commodo consequat.'}]
+						+people
+	
+	section.contacts.container
+		h3.contacts__title Contact Us
+		p.contacts__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+		.row
+			form(id="contactForm" action="#" class='col-sm-6')
+				.fRow
+					input(type='text' placeholder='Your name' )
+					input(type='email' placeholder='Your email')
+				.fRow
+					textarea(placeholder='Your message' class='col-sm-12')
+				input(type='submit' value='submit') 
+			.contacts
+				h4 INFORMATION
+				p Bak-One Company 
+					br 
+				| 12345 Hollywood Bvld Street
+				br
+				| Los Angeles, California
+				p +444 (Phone) 123456
+					i.fa.fa-phone 
+				p +123 (FAX) 0011223
+					i.fa.fa-print 
+				p info@bak-onecompany.com
+					i.fa.fa-envelope-o
+			
+	footer
+		p © Copyright 2013 Bak-One  |  One Page Flat Template
+
+	script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous")
+	script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous")
+
+
+
+
+
+
+
+
 
 
