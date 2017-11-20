@@ -1,7 +1,5 @@
 include mixins/_mixins.pug
 
-
-
 doctype html
 head
 	link(rel='stylesheet', href='css/normalize.css')
@@ -11,7 +9,6 @@ head
 	link(rel='stylesheet' href='css/style.min.css')
 body
 	header.container
-		
 		nav.navbar.navbar-expand-md
 			.navbar-brand
 				a: img(src='img/b-logo.png')
@@ -30,13 +27,13 @@ body
 		h4.hero__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
 			br
 			| nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.	
-		button.hero__ LEARN MORE
+		button.hero LEARN MORE
 		.hero__down
 			i.fa.fa-chevron-circle-down
 
 	section.portfolio.container.text-sm-center
 		h3.portfolio__title Portfolio
-		p.portfolio__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+		h4.portfolio__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 		.filter
 			.filter__buttons.row
 				.col-sm-6.offset-sm-3.btn-centering
@@ -50,7 +47,7 @@ body
 	section.about
 		.container.text-sm-center
 			h3.about__title About Us
-			p.about__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+			h4.about__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 			.row
 				.offset-sm-1.col-sm-10
 					.row.justify-content-around
@@ -58,33 +55,47 @@ body
 						+people
 	
 	section.contacts.container
-		h3.contacts__title Contact Us
-		p.contacts__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+		h3.contacts__title.text-center Contact Us
+		h4.contacts__text.text-center Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 		.row
 			form(id="contactForm" action="#" class='col-sm-6')
-				.fRow
-					input(type='text' placeholder='Your name' )
-					input(type='email' placeholder='Your email')
-				.fRow
-					textarea(placeholder='Your message' class='col-sm-12')
-				input(type='submit' value='submit') 
-			.contacts
+				.form-row
+					.col-sm-6
+						input(type='text' placeholder='Your name' class='form-control')
+					.col-sm-6
+						input(type='email' placeholder='Your email' class='form-control')
+				.form-row
+					.col
+						textarea(placeholder='Your message' class='col form-control')
+				.form-row.justify-content-end
+					button(type='submit') submit 
+			.info.col-sm-6.text-sm-left
 				h4 INFORMATION
-				p Bak-One Company 
+				p.adress 
+					i.fa.fa-map-marker 
+					span Bak-One Company 
 					br 
-				| 12345 Hollywood Bvld Street
-				br
-				| Los Angeles, California
-				p +444 (Phone) 123456
-					i.fa.fa-phone 
-				p +123 (FAX) 0011223
-					i.fa.fa-print 
-				p info@bak-onecompany.com
+					span.p12 12345 Hollywood Bvld Street
+					br
+					span.p12 Los Angeles, California
+				p
+					i.fa.fa-phone
+					span +444 (Phone) 123456  
+				p
+					i.fa.fa-print
+					span +123 (FAX) 0011223
+				p
 					i.fa.fa-envelope-o
+					span info@bak-onecompany.com
+					
 			
 	footer
-		p © Copyright 2013 Bak-One  |  One Page Flat Template
-
+		.container
+			.row
+				p.col-sm-11 © Copyright 2013 Bak-One  |  One Page Flat Template
+				.col-sm-1.arrowCenter
+					.backToTop
+						i.fa.fa-chevron-up
 	script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous")
 	script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous")
 	script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous")

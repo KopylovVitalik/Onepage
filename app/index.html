@@ -29,12 +29,12 @@
 	<section class="hero text-sm-center">
 		<h1 class="hero__motto">We Build <span>Brand</span></h1>
 		<h4 class="hero__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy<br>nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.	</h4>
-		<button class="hero__">LEARN MORE</button>
+		<button class="hero">LEARN MORE</button>
 		<div class="hero__down"><i class="fa fa-chevron-circle-down"></i></div>
 	</section>
 	<section class="portfolio container text-sm-center">
 		<h3 class="portfolio__title">Portfolio</h3>
-		<p class="portfolio__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+		<h4 class="portfolio__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h4>
 		<div class="filter">
 			<div class="filter__buttons row">
 				<div class="col-sm-6 offset-sm-3 btn-centering">
@@ -59,23 +59,23 @@
 	<section class="about">
 		<div class="container text-sm-center">
 			<h3 class="about__title">About Us</h3>
-			<p class="about__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+			<h4 class="about__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h4>
 			<div class="row">
 				<div class="offset-sm-1 col-sm-10">
 					<div class="row justify-content-around">
-						<div class="col-sm-3 person"><img class="img-fluid" src="img/img1.jpg"/>
-							<h4>Melannie Doe</h4>
-							<h5>Project manager</h5>
+						<div class="col-md-3 col-sm-12 person"><img class="img-fluid" src="img/img1.jpg"/>
+							<h4 class="person-name">Melannie Doe</h4>
+							<h5 class="person-position">Project manager</h5>
 							<p class="text-left">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nislut aliquip ex ea commodo consequat.</p>
 						</div>
-						<div class="col-sm-3 person"><img class="img-fluid" src="img/img2.jpg"/>
-							<h4>Melannie Doe</h4>
-							<h5>Project manager</h5>
+						<div class="col-md-3 col-sm-12 person"><img class="img-fluid" src="img/img2.jpg"/>
+							<h4 class="person-name">Melannie Doe</h4>
+							<h5 class="person-position">Project manager</h5>
 							<p class="text-left">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nislut aliquip ex ea commodo consequat.</p>
 						</div>
-						<div class="col-sm-3 person"><img class="img-fluid" src="img/img3.jpg"/>
-							<h4>Melannie Doe</h4>
-							<h5>Project manager</h5>
+						<div class="col-md-3 col-sm-12 person"><img class="img-fluid" src="img/img3.jpg"/>
+							<h4 class="person-name">Melannie Doe</h4>
+							<h5 class="person-position">Project manager</h5>
 							<p class="text-left">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nislut aliquip ex ea commodo consequat.</p>
 						</div>
 					</div>
@@ -84,32 +84,46 @@
 		</div>
 	</section>
 	<section class="contacts container">
-		<h3 class="contacts__title">Contact Us</h3>
-		<p class="contacts__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+		<h3 class="contacts__title text-center">Contact Us</h3>
+		<h4 class="contacts__text text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h4>
 		<div class="row">
 			<form class="col-sm-6" id="contactForm" action="#">
-				<div class="fRow">
-					<input type="text" placeholder="Your name">
-					<input type="email" placeholder="Your email">
+				<div class="form-row">
+					<div class="col-sm-6">
+						<input class="form-control" type="text" placeholder="Your name">
+					</div>
+					<div class="col-sm-6">
+						<input class="form-control" type="email" placeholder="Your email">
+					</div>
 				</div>
-				<div class="fRow">
-					<textarea class="col-sm-12" placeholder="Your message"></textarea>
+				<div class="form-row">
+					<div class="col">
+						<textarea class="col form-control" placeholder="Your message"></textarea>
+					</div>
 				</div>
-				<input type="submit" value="submit">
+				<div class="form-row justify-content-end">
+					<button type="submit">submit </button>
+				</div>
 			</form>
-			<div class="contacts">
+			<div class="info col-sm-6 text-sm-left">
 				<h4>INFORMATION</h4>
-				<p>Bak-One Company <br></p>12345 Hollywood Bvld Street<br>Los Angeles, California
-				<p>+444 (Phone) 123456<i class="fa fa-phone"> </i></p>
-				<p>+123 (FAX) 0011223<i class="fa fa-print"> </i></p>
-				<p>info@bak-onecompany.com<i class="fa fa-envelope-o"></i></p>
+				<p class="adress"> <i class="fa fa-map-marker"> </i><span>Bak-One Company </span><br><span class="p12">12345 Hollywood Bvld Street</span><br><span class="p12">Los Angeles, California</span></p>
+				<p><i class="fa fa-phone"></i><span>+444 (Phone) 123456  </span></p>
+				<p><i class="fa fa-print"></i><span>+123 (FAX) 0011223</span></p>
+				<p><i class="fa fa-envelope-o"></i><span>info@bak-onecompany.com</span></p>
 			</div>
 		</div>
 	</section>
 	<footer>
-		<p>© Copyright 2013 Bak-One  |  One Page Flat Template</p>
+		<div class="container">
+			<div class="row">
+				<p class="col-sm-11">© Copyright 2013 Bak-One  |  One Page Flat Template</p>
+				<div class="col-sm-1 arrowCenter">
+					<div class="backToTop"><i class="fa fa-chevron-up"></i></div>
+				</div>
+			</div>
+		</div>
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </body>

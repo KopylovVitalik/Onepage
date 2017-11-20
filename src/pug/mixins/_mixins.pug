@@ -17,8 +17,8 @@ mixin pImages
 
 mixin people
 	each item in ourPeople
-		.col-sm-3.person
+		.col-md-3.col-sm-12.person
 			img(class='img-fluid' src='img/'+item.image)
-			h4= item.name
-			h5= item.position
+			h4.person-name= item.name
+			h5.person-position= item.position
 			p.text-left= item.text
